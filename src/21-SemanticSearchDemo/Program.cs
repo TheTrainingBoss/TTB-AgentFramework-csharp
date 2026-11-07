@@ -37,8 +37,8 @@ IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator = client
 //Using Azure AI Search
 VectorStore vectorStoreFromAzureAiSearch = new AzureAISearchVectorStore(
     new SearchIndexClient(
-        new Uri("https://agaisearch.search.windows.net"), // It is best practice to put this in a secret manager or environment variable
-        new AzureKeyCredential("hhHZyE7dJ35pFHznaY3QfqptrL5IaMOjgo1ugGemhhAzSeCNkHmc")), // It is best practice to put this in a secret manager or environment variable
+        new Uri("https://<enter Azure AI Search Endpoint>"), // It is best practice to put this in a secret manager or environment variable
+        new AzureKeyCredential("hhHZyE7dJ35p...<enter Azure AI Search Key>")), // It is best practice to put this in a secret manager or environment variable
     new AzureAISearchVectorStoreOptions {
         EmbeddingGenerator = embeddingGenerator
     });
