@@ -100,7 +100,7 @@ Cloud model and service usage may incur charges under your provider's pricing.
 
 ## Questions and Feedback
 
-For questions about the lessons, use the [Github Discussions Forum](https://github.com/TheTrainingBoss/TTB-AgentFramework-csharp/discussions). To report a reproducible code issue, open an issue in this repository and include the relevant example, steps to reproduce, and error details. Remove credentials and sensitive information before sharing logs or configuration.
+For questions about the lessons, use the [Github Discussions Forum](https://github.com/TheTrainingBoss/TTB-AgentFramework-csharp/discussions). To report a reproducible code issue, open an [issue](https://github.com/TheTrainingBoss/TTB-AgentFramework-csharp/issues/) in this repository and include the relevant example, steps to reproduce, and error details. Remove credentials and sensitive information before sharing logs or configuration.
 
 ## License
 
