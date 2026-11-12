@@ -4,7 +4,7 @@
     <TargetFramework>net11.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <UserSecretsId>8fc8b1d7-b2a5-4c0e-b621-c141e4037f31</UserSecretsId>
+    <UserSecretsId>TTB-AgentFramework-csharp</UserSecretsId>
   </PropertyGroup>
    <ItemGroup>
     <PackageReference Include="Microsoft.Agents.AI.DevUI" />

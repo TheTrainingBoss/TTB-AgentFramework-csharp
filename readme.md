@@ -7,7 +7,8 @@ Source code and practical examples for the Training Boss course **Mastering Micr
 ## Dependency
 
 - The code is currently using Microsoft Agent Framework NuGet package version 1.28.0
-- All the projects have been upgraded to .NET 11
+- All the projects have been upgraded to .NET 11 (`net11.0`) and require the **.NET 11 SDK**
+- All projects that use .NET User Secrets share a single store named `TTB-AgentFramework-csharp`
 
 ## Overview
 
@@ -38,7 +39,7 @@ The accompanying [lessons](https://thetrainingboss.com/course/microsoft-agent-fr
 
 Before running the examples, prepare the following:
 
-- **.NET 10 SDK** for the projects targeting `net10.0`.
+- **.NET 11 SDK** for the projects targeting `net11.0`. Verify your installation with `dotnet --version`.
 - A C# development environment, such as Visual Studio or Visual Studio Code with C# tooling.
 - Git to clone the repository.
 - Access to the model provider or local model runtime required by the example you choose.
@@ -63,6 +64,22 @@ Open `TTB-AgentFramework-csharp.sln` at the repository root in your development 
 Review its source code and configure the required credentials, endpoints, model names, deployment names, and service connections.
 
 Configuration varies between examples. Several use .NET User Secrets, while others contain values that must be supplied or adjusted before execution. For examples that load User Secrets, set the exact configuration keys referenced in the code.
+
+#### User Secrets
+
+Every project that loads User Secrets uses the same `UserSecretsId`, `TTB-AgentFramework-csharp`, so a secret only needs to be set once to be available to all examples. Set secrets from any of those project directories, for example:
+
+```bash
+cd src/02-AzureOpenAIDemo
+dotnet user-secrets set "endpoint" "<your-endpoint>"
+dotnet user-secrets set "apikey" "<your-api-key>"
+dotnet user-secrets list
+```
+
+The secrets are stored outside the repository in:
+
+- Windows: `%APPDATA%\Microsoft\UserSecrets\TTB-AgentFramework-csharp\secrets.json`
+- macOS/Linux: `~/.microsoft/usersecrets/TTB-AgentFramework-csharp/secrets.json`
 
 Keep API keys and other credentials out of version control. Use User Secrets or another appropriate configuration mechanism when adapting the examples.
 
