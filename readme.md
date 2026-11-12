@@ -6,7 +6,8 @@ Source code and practical examples for the Training Boss course **Mastering Micr
 
 ## Dependency
 
-The code is currently using Microsoft Agent Framework NuGet package version 1.28.0
+- The code is currently using Microsoft Agent Framework NuGet package version 1.28.0
+- All the projects have been upgraded to .NET 11
 
 ## Overview
 
